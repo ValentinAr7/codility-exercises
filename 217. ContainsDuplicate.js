@@ -11,7 +11,7 @@ var containsDuplicate = function (nums) {
         }
     }
 
-    nums.length != distinctArr.length ? distinct = false : distinct = true
+    nums.length != distinctArr.length ? distinct = true : distinct = false
     console.log(distinct)
 };
 
