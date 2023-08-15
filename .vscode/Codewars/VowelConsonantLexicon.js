@@ -1,23 +1,5 @@
-function tidyNumber(n) {
-  let string = n.toString();
-  let arr = string.split("");
+const numbers = [1, 2, 3, 4, 5];
 
-  let isTidy = true;
-
-  if (isNaN(n)) {
-    isTidy = false;
-  }
-
-  for (let i = 0; i <= arr.length; i++) {
-    let currentNumber = arr[i];
-
-    if (currentNumber > arr[i + 1]) {
-      isTidy = false;
-      break;
-    }
-  }
-
-  return isTidy;
-}
-
-tidyNumber(362);
+let accumulator = 5
+const sum = numbers.reduce((accumulator, curr) => accumulator + curr, 0);
+console.log(sum); // 15
